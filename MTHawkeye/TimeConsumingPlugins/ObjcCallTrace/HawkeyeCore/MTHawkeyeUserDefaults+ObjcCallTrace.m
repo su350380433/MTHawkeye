@@ -20,7 +20,7 @@
 
 - (BOOL)objcCallTraceOn {
     NSNumber *value = [self objectForKey:NSStringFromSelector(@selector(objcCallTraceOn))];
-    return value ? value.boolValue : NO;
+    return YES;
 }
 
 - (void)setObjcCallTraceTimeThresholdInMS:(CGFloat)objcCallTraceTimeThresholdInMS {
@@ -38,7 +38,7 @@
 
 - (NSInteger)objcCallTraceDepthLimit {
     NSNumber *value = [self objectForKey:NSStringFromSelector(@selector(objcCallTraceDepthLimit))];
-    return value ? value.integerValue : 5;
+    return 10;
 }
 
 @end
