@@ -29,7 +29,7 @@
 
 - (CGFloat)objcCallTraceTimeThresholdInMS {
     NSNumber *value = [self objectForKey:NSStringFromSelector(@selector(objcCallTraceTimeThresholdInMS))];
-    return value ? value.floatValue : 10.f;
+    return value ? value.floatValue : 3.f;
 }
 
 - (void)setObjcCallTraceDepthLimit:(NSInteger)objcCallTraceDepthLimit {
